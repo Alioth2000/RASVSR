@@ -44,7 +44,7 @@ datasets:
 
 # network structures
 network_g:
-  type: BasicSVSR
+  type: RASVSR
   mid_channels: 64
   num_blocks: 7
   is_low_res_input: true
