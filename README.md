@@ -46,7 +46,7 @@ We recommend using the following command to convert the files to lmdb format to 
     ```
     python basicsr/train.py -opt options/train_RASVSR.yml
     ```
-- Multiple gpu
+- Multiple GPU
     ```
     CUDA_VISIBLE_DEVICES=0,1 ./scripts/dist_train.sh 2 options/train_RASVSR.yml
     ```
@@ -56,7 +56,7 @@ We recommend using the following command to convert the files to lmdb format to 
     ```
     python basicsr/test.py -opt options/test_RASVSR.yml
     ```
-- Multiple gpu
+- Multiple GPU
     ```
     CUDA_VISIBLE_DEVICES=0,1 ./scripts/dist_test.sh 2 options/test_RASVSR.yml
     ```
