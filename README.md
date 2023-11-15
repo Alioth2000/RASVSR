@@ -5,7 +5,7 @@ Codes for "A Lightweight Recurrent Aggregation Network for Satellite Video Super
 
 Author: Han Wang, Shengyang Li*, Manqi Zhao<br>
 Technology and Engineering Center for Space Utilization, Chinese Academy of Sciences (CAS)<br>
-University of Chinese Academy of Sciences
+University of Chinese Academy of Sciences (UCAS)
 
 ### Abstract
 >Intelligent processing and analysis of satellite video has become one of the research hotspots in the representation of remote sensing, and satellite video super-resolution (SVSR) is an important research direction which can improve the image quality of satellite video. However, existing approaches for SVSR often underutilize a notable advantage inherent to satellite video: the presence of extensive sequential imagery capturing a consistent scene. Presently, the majority of SVSR methods merely harness a limited number of adjacent frames for enhancing the resolution of individual frames, thus resulting in suboptimal information utilization. In response, we introduce the Recurrent Aggregation Network for Satellite Video Super-Resolution (RASVSR). This innovative framework leverages a bidirectional recurrent neural network to propagate extracted features from each frame across the entire video sequence. It relies on an alignment method based on optical flow and deformable convolution (DCN) to realize the alignment of the features, and a Temporal Feature Fusion Module (TFF) to realize effective feature fusion over time. Notably, our research underscores the positive influence of employing lengthier image sequences in SVSR. In the context of RASVSR, with better alignment and fusion, we make the perceptual field of each frame spanning 100 frames of the video, thus acquiring richer information, and information between different images can be complementary. This strategic approach culminates in superior performance compared to alternative methods, as evidenced by a noteworthy 1.15 dB improvement in PSNR, with very few parameters.
@@ -42,23 +42,23 @@ We recommend using the following command to convert the files to lmdb format to 
   ```
 
  ## Training
-- single GPU
+- Single GPU
     ```
     python basicsr/train.py -opt options/train_RASVSR.yml
     ```
-- dist train
+- Multiple gpu
     ```
     CUDA_VISIBLE_DEVICES=0,1 ./scripts/dist_train.sh 2 options/train_RASVSR.yml
     ```
 
 ## Test
-- single GPU
+- Single GPU
     ```
-    python basicsr/test.py -opt options/train_RASVSR.yml
+    python basicsr/test.py -opt options/test_RASVSR.yml
     ```
-- dist test
+- Multiple gpu
     ```
-    CUDA_VISIBLE_DEVICES=0,1 ./scripts/dist_test.sh 2 options/train_RASVSR.yml
+    CUDA_VISIBLE_DEVICES=0,1 ./scripts/dist_test.sh 2 options/test_RASVSR.yml
     ```
 
 ## Results
