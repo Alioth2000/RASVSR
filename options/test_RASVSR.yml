@@ -20,14 +20,14 @@ datasets:
 
 # network structures
 network_g:
-  type: BasicSVSR
+  type: RASVSR
   mid_channels: 64
   num_blocks: 7
   is_low_res_input: true
 
 # path
 path:
-  pretrain_network_g: experiments/122_SVSR_SVSR400_100k_B4G2/models/net_g_90000.pth
+  pretrain_network_g: experiments/pretrained_models/SAT-MTB-VSR/RASVSR_B4G2_90k.pth
   strict_load_g: true
 
 # validation settings

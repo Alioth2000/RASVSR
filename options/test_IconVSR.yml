@@ -30,7 +30,7 @@ network_g:
 
 # path
 path:
-  pretrain_network_g: experiments/118_IconVSR_SVSR400_300k_b8g2/models/net_g_60000.pth
+  pretrain_network_g: experiments/pretrained_models/SAT-MTB-VSR/IconVSR_B8G2_60k.pth
   strict_load_g: true
 
 # validation settings

@@ -28,7 +28,7 @@ network_g:
 
 # path
 path:
-  pretrain_network_g: experiments/103.2_BasicVSRPP_SVSR400_100k_B8G2/models/net_g_40000.pth
+  pretrain_network_g: experiments/pretrained_models/SAT-MTB-VSR/BasicVSRPP_B4G1_40k.pth
   strict_load_g: true
 
 # validation settings
