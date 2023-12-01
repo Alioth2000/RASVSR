@@ -70,11 +70,12 @@ Download the pretrained models from [Baidu Netdisk](https://pan.baidu.com/s/1U1A
   author={Wang, Han and Li, Shengyang and Zhao, Manqi},
   journal={IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing}, 
   title={A Lightweight Recurrent Aggregation Network for Satellite Video Super-Resolution}, 
-  year={2023},
-  volume={},
+  year={2024},
+  volume={17},
   number={},
-  pages={1-12},
+  pages={685-695},
   doi={10.1109/JSTARS.2023.3332449}}
+
 ```
 
 ## Acknowledgement
